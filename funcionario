@@ -1,0 +1,15 @@
+class Funcionario:
+    def __init__(self, nome, salario):
+        self.nome = nome
+        self.salario = salario
+
+    def getNome(self):
+        return self.nome
+
+    def getSalario(self):
+        return self.salario
+
+funcionario1 = Funcionario("João", 2000.00)
+
+print(f"Nome: {funcionario1.getNome()}")
+print(f"Salário: R${funcionario1.getSalario():.2f}")
